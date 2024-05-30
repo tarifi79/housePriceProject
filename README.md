@@ -4,29 +4,31 @@ This project aims to predict house prices based on various features such as bedr
 
 ## Project Structure
 
+```plaintext
 housing_price_prediction/
 ├── backend/
-│ ├── data/
-│ │ └── house.csv
-│ ├── models/
-│ │ ├── model.pkl
-│ │ └── scaler.pkl
-│ ├── notebooks/
-│ │ └── Data_Exploration_and_Visualization.ipynb
-│ ├── src/
-│ │ ├── train_model.py
-│ │ ├── app.py
-│ └── requirements.txt
+│   ├── data/
+│   │   └── house.csv
+│   ├── models/
+│   │   ├── model.pkl
+│   │   └── scaler.pkl
+│   ├── notebooks/
+│   │   └── Data_Exploration_and_Visualization.ipynb
+│   ├── src/
+│   │   ├── train_model.py
+│   │   ├── app.py
+│   └── requirements.txt
 ├── frontend/
-│ ├── public/
-│ │ └── index.html
-│ ├── src/
-│ │ ├── components/
-│ │ │ └── HousePriceForm.jsx
-│ │ ├── App.jsx
-│ │ ├── main.jsx
-│ └── package.json
-├── README.md
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── HousePriceForm.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   └── package.json
+└── README.md
+```
 
 ## Setup
 
@@ -72,3 +74,11 @@ housing_price_prediction/
    ```bash
    npm run dev
    ```
+
+### Jupyter Notebook
+
+Data Exploration and Visualization: The Jupyter notebook Data_Exploration_and_Visualization.ipynb contains data exploration and visualization steps to understand the dataset better.
+
+### Best Model
+
+Based on the iterative feature addition, the best model includes all the features: net_sqm, bedroom_count, center_distance, metro_distance, floor, and age. This model achieved an R² score of 0.729, indicating that approximately 72.9% of the variance in house prices can be explained by these features. The Mean Squared Error (MSE) for this model is 4,028,777, which is the lowest among the tested combinations, demonstrating improved prediction accuracy.
