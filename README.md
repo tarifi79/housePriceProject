@@ -85,6 +85,11 @@ Based on the iterative feature addition, the best model includes all the feature
 
 ### Dependencies
 
-## Frontend
+#### Frontend
 
-## Backend
+\*Flask
+\*Flask-CORS
+\*Pandas
+\*Scikit-learn
+
+#### Backend
