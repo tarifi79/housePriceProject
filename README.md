@@ -91,5 +91,11 @@ Based on the iterative feature addition, the best model includes all the feature
 - Flask-CORS
 - Pandas
 - Scikit-learn
+- Matplotlib
+- Seaborn
 
 #### Backend
+
+- React
+- Vite
+- Axios
