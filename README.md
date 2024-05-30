@@ -82,3 +82,9 @@ Data Exploration and Visualization: The Jupyter notebook Data_Exploration_and_Vi
 ### Best Model
 
 Based on the iterative feature addition, the best model includes all the features: net_sqm, bedroom_count, center_distance, metro_distance, floor, and age. This model achieved an R² score of 0.729, indicating that approximately 72.9% of the variance in house prices can be explained by these features. The Mean Squared Error (MSE) for this model is 4,028,777, which is the lowest among the tested combinations, demonstrating improved prediction accuracy.
+
+### Dependencies
+
+## Frontend
+
+## Backend
