@@ -79,26 +79,30 @@ housing_price_prediction/
 
 - POST /predict: Predict the house price based on input features.
 
-* Request Body: JSON object containing the features:
+  - Request Body: JSON object containing the features:
 
-```json
-{
-  "bedroom_count": 3,
-  "net_sqm": 120,
-  "center_distance": 10,
-  "metro_distance": 2,
-  "floor": 5,
-  "age": 10
-}
-```
+  ```json
+  {
+    "bedroom_count": 3,
+    "net_sqm": 120,
+    "center_distance": 10,
+    "metro_distance": 2,
+    "floor": 5,
+    "age": 10
+  }
+  ```
 
-- Response: JSON object containing the predicted price:
+  - Response: JSON object containing the predicted price:
 
-```json
-{
-  "prediction": 200000
-}
-```
+  ```json
+  {
+    "prediction": 200000
+  }
+  ```
+
+- GET /download/<filename>: Download the model or scaler pickle file.
+
+  - Example: http://127.0.0.1:5000/download/model.pkl
 
 ### Jupyter Notebook
 
