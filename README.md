@@ -75,6 +75,31 @@ housing_price_prediction/
    npm run dev
    ```
 
+### API Endpoints
+
+- POST /predict: Predict the house price based on input features.
+
+* Request Body: JSON object containing the features:
+
+```json
+{
+  "bedroom_count": 3,
+  "net_sqm": 120,
+  "center_distance": 10,
+  "metro_distance": 2,
+  "floor": 5,
+  "age": 10
+}
+```
+
+- Response: JSON object containing the predicted price:
+
+```json
+{
+  "prediction": 200000
+}
+```
+
 ### Jupyter Notebook
 
 Data Exploration and Visualization: The Jupyter notebook Data_Exploration_and_Visualization.ipynb contains data exploration and visualization steps to understand the dataset better.
